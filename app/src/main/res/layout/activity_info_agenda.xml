@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrund2"
+    tools:context=".Info_agenda">
+
+
+    <TextView
+        android:id="@+id/title_info_agenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agendamento"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+    <View
+        android:id="@+id/containerinfo"
+        style="@style/ContainerComponents"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_info_agenda" />
+
+    <TextView
+        android:id="@+id/title_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/verde_3"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/containerinfo"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@id/containerinfo"
+        app:layout_constraintTop_toBottomOf="@id/title_info_agenda" />
+
+    <EditText
+        android:id="@+id/info_nom"
+        style="@style/Edit_Text"
+        android:layout_marginTop="84dp"
+        android:drawableRight="@drawable/baseline_visibility_cpf"
+        android:hint="Nome Completo"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@id/containerinfo"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="@id/containerinfo"
+        app:layout_constraintTop_toTopOf="@id/containerinfo" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="140dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="236dp"
+
+        android:layout_marginTop="84dp"
+        android:text="Masculino"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info_nom" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="140dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="84dp"
+        android:text="Feminino"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info_nom" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_loginn"
+        style="@style/Button"
+        android:onClick="confirmarConsulta"
+        android:text="Agendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerinfo" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@id/checkBox3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/checkBox3"
+        app:layout_constraintTop_toBottomOf="@id/info_nom" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="@id/checkBox"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/checkBox"
+        app:layout_constraintTop_toBottomOf="@id/info_nom" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

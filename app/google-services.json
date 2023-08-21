@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1048176769015",
+    "project_id": "clipack-9210f",
+    "storage_bucket": "clipack-9210f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048176769015:android:85020e8ceb24f8f36b60f2",
+        "android_client_info": {
+          "package_name": "com.example.clipack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048176769015-jtcvg8ud3pu3t5ommdosvvt39lism8n2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAySeB59-bsWutfDHQmzTqjZNj2HfvEvJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048176769015-jtcvg8ud3pu3t5ommdosvvt39lism8n2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

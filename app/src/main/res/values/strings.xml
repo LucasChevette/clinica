@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Clipack</string>
+
+    <string name="login">Login</string>
+    <string name="text_cad">Cadastre-se agora!</string>
+    <string name="title_cad">Cadastre-se</string>
+</resources>
